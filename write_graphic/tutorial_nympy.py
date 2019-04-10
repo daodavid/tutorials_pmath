@@ -1,3 +1,4 @@
+from mpl_toolkits import mplot3d
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -36,11 +37,14 @@ print(array2)
 
 
 def plot_grapphic(x,y):
-    plt.plot(x, y)
+
     ax = plt.gca()
+    ax = plt.axes(projection='3d')
+    plt.plot(x, y)
     ax.spines["left"].set_position("zero")
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
+    ax.scatter3D(x, y, x, x, cmap='Greens');
     plt.show()
 
 plot_grapphic(array,array2)
