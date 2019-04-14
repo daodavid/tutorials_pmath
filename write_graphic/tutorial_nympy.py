@@ -39,12 +39,19 @@ print(array2)
 def plot_grapphic(x,y):
 
     ax = plt.gca()
-    ax = plt.axes(projection='3d')
+    ax = plt.axes(projection='3d') #convert to 3d
     plt.plot(x, y)
+    ax.scatter3D(x, y, x, x, cmap='Greens');  # write points
     ax.spines["left"].set_position("zero")
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
-    ax.scatter3D(x, y, x, x, cmap='Greens');
+
     plt.show()
 
 plot_grapphic(array,array2)
+
+
+"""
+write circle
+
+"""
