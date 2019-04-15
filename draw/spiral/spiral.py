@@ -16,9 +16,9 @@ def draw(args_X, args_Y):
 
 
 
-
+"""
 def get_codinates(call,r):
-    result = [ np.exp(i/50)*call(i) for i in r]
+    result = [ np.exp(i/50)/100*call(i) for i in r]
     return result
 
 r = np.linspace(-100,100,10000)
@@ -28,6 +28,42 @@ x = lambda x :np.cos(x)
 
 x_args = get_codinates(x,r)
 y_args = get_codinates(y,r)
+
+
+draw(x_args,y_args)
+"""
+
+def hiperbolic_spiral_cordinates(call,r):
+    result = [1/i*call(i) for i in r]
+    return result
+
+def aritmetic_spiral_codinates(call, r):
+    result = [(2 + 4*i)*call(i) for i in r]
+    return  result
+
+def logaritmetic_spira_coridnates(call , r):
+    result = [np.exp(i/100)/100*call(i) for i in r ]
+    return  result
+
+
+r = np.linspace(0,1000,100)
+y = lambda y :np.sin(y)
+x = lambda x :np.cos(x)
+
+
+x_args = hiperbolic_spiral_cordinates(x,r)
+y_args = hiperbolic_spiral_cordinates(y,r)
+
+
+draw(x_args, y_args)
+
+x_args = logaritmetic_spira_coridnates(x,r)
+y_args = logaritmetic_spira_coridnates(y,r)
+
+draw(x_args, y_args)
+
+x_args = aritmetic_spiral_codinates(x,r)
+y_args = aritmetic_spiral_codinates(y,r)
 
 
 draw(x_args,y_args)
