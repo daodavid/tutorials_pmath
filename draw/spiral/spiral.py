@@ -12,7 +12,8 @@ def draw(args_X, args_Y):
     """
     ax = plt.axes()
     plt.plot(args_X, args_Y)
-    ax.fill(args_X, args_Y, "b")
+    plt.scatter(args_X,args_Y,color="black")
+    ax.fill(args_X, args_Y, args_Y,args_X )
     plt.show()
 
 
