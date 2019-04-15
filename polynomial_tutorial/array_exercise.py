@@ -14,3 +14,10 @@ print(numbers_array[6:7])
 [print(i/2) for i in numbers_array]
 
 
+
+x=2
+f = lambda x : x+2
+
+print(eval("x+2"))
+
+eval(x)

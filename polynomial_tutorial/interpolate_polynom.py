@@ -22,6 +22,7 @@ def create_polynomial_function(coeficient, range):
     :return: double array x and y args
     """
     p = np.poly1d(coeficient)
+    print(type(p))
     x_args = np.linspace(range[0], range[1], 20)
     y_args = [p(i) for i in x_args]
     return x_args, y_args  # return two args
