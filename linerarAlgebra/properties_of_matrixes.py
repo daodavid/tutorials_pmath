@@ -55,3 +55,11 @@ if((C==E).all()):
     print("Every matrix multiply be its inverse matrix give the single matrix")
 
 
+latex = r'\begin{bmatrix} 1 & 2 & -1 \\ 3 & 0 & 1 \\ 0 & 2 & 4 \end{bmatrix}'
+print(latex)
+
+
+V1 = [1,3]
+V1 = np.array(V1)
+V2 = V1.dot(A)  # multiplacation by vector
+print(V2)
