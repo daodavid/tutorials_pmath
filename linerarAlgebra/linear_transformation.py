@@ -175,6 +175,6 @@ ax.arrow(2, 2, x[0, 0], x[1, 0], head_width=0.3, head_length=0.2, fc='blue', ec=
 
 transform = R.dot(T)
 x = transform.dot(x)
-ax.arrow(2, 2, x[0, 0], x[1, 0], head_width=0.3, head_length=0.2, fc='blue', ec='black')
-
-#plt.show()
+ax.arrow(2, 2, x[0, 0], x[1, 0], head_width=0.3, head_length=0.2, fc='blue', ec='black' ,label='Arrow2')
+plt.text(x[0, 0],x[1, 0], 'translation')
+plt.show()
