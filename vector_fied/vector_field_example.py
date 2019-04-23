@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 def append_vector(x_start, y_start, x, y,color='blue'):
-    plt.quiver(x_start, y_start, x, y, angles='xy', scale_units='xy', scale=0.01, color='blue')
+    plt.quiver(x_start, y_start, x, y, angles='xy', scale_units='xy', scale=0.1, color='blue')
     # plt.quiver([0], [0], [2 , angles='xy', scale_units='xy', scale=1)
 
 
@@ -34,6 +34,6 @@ def draw_vectot_field(x_funct, y_funct, range_X, range_Y, color='blue'):
 # add = lambda x, y : x + y
 
 
-f_x = lambda x,y : -x/(x**2 + y**2)
-f_y = lambda x,y : -y/(x**2 + y**2)
+f_x = lambda x,y : -x/abs(x+2 + y+2)
+f_y = lambda x,y : -y/abs(x+2 + y+2)
 draw_vectot_field(f_x,f_y,[-100,100],[-100,100])
