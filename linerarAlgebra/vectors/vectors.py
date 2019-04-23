@@ -72,8 +72,14 @@ z = 3 * second_bases[0, :] + 2 * second_bases[1, :]  # cordinates in basic2 is [
 print(z)
 res = np.array(z).dot(np.linalg.inv(second_bases))  ## must to return cordinate in basis 2
 
-assert np.array_equal(np.array([3, 2]), res), "the invesre does not work"
+assert np.array_equal(np.array([3, 2]), res), "the inverse does not work"
 
 print(res)
 
+
+
+
+
 # plot_vector(v2,color='red')
+
+
