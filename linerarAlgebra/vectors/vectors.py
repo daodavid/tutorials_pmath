@@ -5,6 +5,11 @@ import matplotlib.pyplot as plt
 
 
 def plot_vector(vectors, color='b'):
+    ax = plt.gca()
+    ax.spines['top'].set_color('none')
+    ax.spines['bottom'].set_position('zero')
+    ax.spines['left'].set_position('zero')
+    ax.spines['right'].set_color('none')
     plt.quiver([0], [0], vectors[0], vectors[1], angles='xy', scale_units='xy', scale=1, color=color)
     # plt.quiver([0], [0], [2 , angles='xy', scale_units='xy', scale=1)
     plt.xlim(-10, 10)
@@ -80,6 +85,6 @@ print(res)
 
 
 
-# plot_vector(v2,color='red')
+#plot_vector(v2,color='red')
 
 
