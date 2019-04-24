@@ -47,5 +47,5 @@ x_func = lambda x,y,z,c: (c-x)/(math.sqrt((c-x)**2 + (c-y)**2 + (c-z)**2))
 y_func = lambda x,y,z,c: (c-y)/(math.sqrt((c-x)**2 + (c-y)**2 + (c-z)**2))
 z_func = lambda x,y,z,c: (c-z)/(math.sqrt(x**2 + y**2 + z**2))
 
-matrix = create_vectors_matrix(x_func, y_func, z_func,scale=1,center_force=[11,11,11])
+matrix = create_vectors_matrix(x_func, y_func, z_func,scale=0.5,center_force=[-12,-12,-12])
 plot_vector_field(matrix)
