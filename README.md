@@ -8,7 +8,7 @@ simply example
 
 
 
-    https://htmlpreview.github.io/?    https://github.com/Daodavid93/python_math_libraries_usage_examples/blob/master/html/linear_algebra_tutorial.html
+  [r2hc]: http://github.com/github/markup/tree/master/lib/github/markups.rb#L13  https://htmlpreview.github.io/?    https://github.com/Daodavid93/python_math_libraries_usage_examples/blob/master/html/linear_algebra_tutorial.html
 
 
 
